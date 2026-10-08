@@ -1,5 +1,12 @@
-# 物流运输管理系统
+# 运途
 
-Java SE 写的控制台版订单管理小程序，练手项目。实现了订单录入（订单号去重、重量校验）、先进先出配送、按路线查询并按重量排序，数据存到 orders.txt 里做持久化。异常日志用自定义线程池异步写入 error.txt，不阻塞主流程。
+运途是一个 Java SE 写的控制台版物流订单管理程序，练手项目。管理运输订单的完整流程：录入订单（订单号去重、重量校验）、按先进先出顺序配送、按路线查询并按重量排序，数据持久化到 orders.txt。异常日志由自定义线程池异步写入 error.txt，不阻塞主流程。
 
-技术上是 Java SE 那一套：IO 流、线程池、Stream、LocalDateTime、LinkedList。
+技术上用到了 IO 流、线程池、Stream、LocalDateTime、LinkedList。
+
+## 怎么跑
+
+```
+javac *.java
+java Main
+```
